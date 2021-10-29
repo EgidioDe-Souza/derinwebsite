@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get '/pages', to: 'pages#index', as: 'pages'
   get '/back', to: 'pages#home', as: 'back'
+  get '/pages/new', to: 'pages#new', as: 'new_meeting'
 
 
 

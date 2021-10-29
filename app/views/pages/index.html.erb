@@ -1,6 +1,6 @@
 <div class="calendar-container">
  <%=  link_to "Back", back_path  %> 
-  <%= month_calendar do |date, meetings| %>
+  <%= month_calendar(events: @meetings, end_attribute: :end_time) do |date, meetings| %>
     <%= date %>
 
     <% meetings.each do |meeting| %>

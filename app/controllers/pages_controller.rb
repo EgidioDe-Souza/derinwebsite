@@ -18,6 +18,10 @@ class PagesController < ApplicationController
   def back
   end
 
+  def new
+    @meeting = Meeting.new
+  end
+
 
 
   
